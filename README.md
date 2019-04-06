@@ -46,7 +46,7 @@ gcc -o server server.c threadpool.c threadpool.h -lpthread -Wall -g
 ==Input:==
 The server gets 3 parameters: port number, threadpool size, max number of requests at this order.
 example how to run: ./server 8888 5 20    ---> means that port is 8888, pool size is 5, max number of requests is 20.
-if one or more of the parameters is missing or less (or equal) then zero, a usage error will be printed and the program will end.
+if one or more of the parameters is missing/less or equal then zero, a usage error will be printed and the program will end.
 
 ==Output:==
 The server is only wait for requests and d'ont print nothing. when there is a request from some client,
